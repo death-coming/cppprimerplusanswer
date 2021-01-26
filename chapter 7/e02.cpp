@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int input(double grade[], int size);
+int input(double grade[], int max_size);
 void show(const double grade[], int size);
 double mean(const double grade[], int size);
 
@@ -20,12 +20,12 @@ int main()
     return 0;
 }
 
-int input(double grade[], int size)
+int input(double grade[], int max_size)
 {
     cout << "Please enter the grade, at most 10 items: " << endl;
     cout << "Enter any characters to quit" << endl;
     int true_size = 0;
-    for (int i = 0; i < size; i++)
+    for (int i = 0; i < max_size; i++)
     {
         true_size = i;
         cout << true_size+1 << ": ";
